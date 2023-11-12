@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2? family= Poppins:wght@300;400;500;600 & display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins',sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right,#e2e2e2,#c9fff0);
+}
+
+.wrapper{
+    position: relative;
+    width: 678px;
+    min-height: 480px;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.35);
+    border-radius: 30px;
+    overflow: hidden;    
+}
+
+.wrapper a{
+    color: #333;
+    font-size: 13px;
+    text-decoration: none;
+    margin: 15px 0 10px;
+}
+
+.from-wrapper{
+    position: absolute;
+    top: 0;
+    height: 100%;
+    transition: 0.6s ease all;
+}
+
+.wrapper form{
+    height: 100%;
+    background: #fff;
+    padding: 0 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.social{
+    margin: 20px 0;
+}
+
+.social a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ccc;
+    border-radius: 20%;
+    margin: 0 3px;
+    transition: 0.6s ease all;
+}
+
+.social a:hover{
+    background: #0275d8;
+    color: #fff;
+    border-color: #0275d8;
+}
+
+.wrapper span{
+    font-size: 12px;
+}
+
+.wrapper input{
+    width: 100%;
+    background: #eee;
+    border: none;
+    outline: none;
+    padding: 10px 15px;
+    margin: 8px 0;
+    border-radius: 8px;
+    font-size: 13px;
+}
+
+.wrapper button{
+    background: #0275d8;
+    padding: 10px 45px;
+    border: 1px solid transparent;
+    margin-top: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: #fff;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.signin{
+    left: 0;
+    width: 50%;
+    z-index: 2;
+}
+
+.toggle-wrapper{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+    border-radius: 60px 0 0 60px;
+    z-index: 100;
+    transition: 0.6s ease all;
+}
+
+.toggle{
+    position: relative;
+    height: 100%;
+    width: 200%;
+    background-color: #0275d8;
+    color: #fff;
+    left: -100%;
+    transition: 0.6s ease-in-out all;
+}
+
+.panel{
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 0 30px;
+    text-align: center;
+    top: 0;
+    transform: translateX(0);
+    transition: 0.6s ease-in-out all;
+}
+
+.right {
+    right: 0;
+    transform: translateX(0);
+}
+
+.wrapper p{
+    font-size: 14px;
+    line-height: 20px;
+    letter-spacing: 0.3px;
+    margin: 20px 0;
+}
+
+.wrapper .panel button{
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.wrapper.active .toggle-wrapper{
+    border-radius: 0 60px 60px 0;
+    transform: translateX(-100%);
+}
+
+
+
+
+
+
+
